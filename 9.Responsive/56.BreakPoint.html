@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<style type="text/css">
+
+	*{
+		box-sizing: border-box;
+	}
+	.row::after{
+		content: "";
+		clear: both;
+		display: block;
+	}
+
+	[class*="col-"]{
+		float: left;
+		padding: 15px;
+
+	}
+
+	/*For Desktop */
+	.col-1{width: 8.33%;}
+	.col-2{width: 16.66%;}
+	.col-3{width: 25%;}
+	.col-4{width: 33.33%;}
+	.col-5{width: 41.66%;}
+	.col-6{width: 50%;}
+	.col-7{width: 58.33%;}
+	.col-8{width: 66.66%;}
+	.col-9{width: 75%;}
+	.col-10{width: 83.33%;}
+	.col-11{width: 91.66%;}
+	.col-12{width: 100%;}
+	
+	.header{
+		background-color: purple;
+		color: white;
+		padding: 15px;
+	}
+
+	.menu ul{
+		list-style-type: none;
+		margin:0;
+		padding: 0;
+
+	}
+	.menu li{
+		padding: 8px;
+		margin-bottom: 7px;
+		background-color: #deed0b;
+		color: white;
+	}
+	.menu li:hover
+	{
+		background-color: green;
+	}
+
+	.asid{
+		background-color: #00ffe1;
+		padding: 15px;
+		color: white;
+		text-align: center;
+		font-size: 14px;
+	}
+	.footer{
+		background-color: red;
+		color: white;
+		text-align: center;
+		font-size: 12px;
+		padding: 15px;
+	}
+
+	@media only screen and (max-width:768px){
+		/*For Mobile Phone */
+		[class*="col-"]{
+			width: 100%;
+		}
+	}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>Food</h1>
+	</div>
+	<div class="row">
+		<div class="col-3 menu">
+			<ul>
+				<li>Sweet</li>
+				<li>Sour</li>
+				<li>Salty</li>
+			</ul>
+		</div>
+		<div class="col-6">
+			<h1>Food</h1>
+			<p> Food is any substance[1] consumed to provide nutritional support for an organism. It is usually of plant or animal origin, and contains essential nutrients, such as carbohydrates, fats, proteins, vitamins, or minerals. The substance is ingested by an organism and assimilated by the organism's cells to provide energy, maintain life, or stimulate growth
+			</p>
+		</div>
+		<div class="col-3 right">
+			<div class="asid">
+				<h2>Sweet</h2>
+				<p>Generally regarded as the most pleasant taste, sweetness is almost always caused by a type of simple sugar such as glucose or fructose, </p>
+
+				<h2>Sour</h2>
+				<p> Sourness is caused by the taste of acids, such as vinegar in alcoholic beverages. Sour foods include citrus, specifically lemons, limes, and to a lesser degree oranges.  </p>
+
+				<h2>Salty</h2>
+				<p> Salt mounds in Bolivia
+					Saltiness is the taste of alkali metal ions such as sodium and potassium. It is found in almost every food in low to moderate proportions to enhance flavor, 
+				</p>
+			</div>
+		</div>
+	</div> 
+	<div class="footer">
+		Designed By:Meghal Patel		
+	</div>
+</body>
+</html>
